@@ -131,3 +131,21 @@ nav a {
    } 
    body { font-size: 15px; } 
  } 
+
+
+
+/* 1. Pseudo-class rule: Adds a subtle zoom and shadow effect when 
+      hovering over primary buttons for better user interaction */
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease-in-out;
+}
+
+/* 2. Attribute selector rule: Styles all input fields with type="text"
+      by adding a soft blue focus border to improve form accessibility */
+input[type="text"]:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  outline: none;
+}
